@@ -12,6 +12,20 @@ body {
   .container {
     text-align: center;
     padding: 20px;
+    margin: 0 auto;
+  }
+  .conversor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100% - 40px);
+  }
+  .conversor-title{
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    
   }
   
   .page-title {
@@ -25,8 +39,12 @@ body {
   }
   
   .page-logo {
-    width: 250px;
-  }
+    width: 200px;
+    margin: 20px 0;
+    height: 200px;
+    border-radius: 5%;
+    filter: blur(0.5px);
+    }
   
   .alura-latam-logo {
     width: 40px;
