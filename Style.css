@@ -27,7 +27,145 @@ body {
     margin-bottom: 20px;
     
   }
+  .conversor-input{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px; /* Adjust as needed */
+      height: 30px; /* Adjust as needed */
+      border: none;
+      border-radius: 5px;
+      background-color: white; /* Bootstrap primary button color */
+      color: black;
+      text-align: center;
+      font-size: 0.875rem; /* Bootstrap small button font size */   
+      margin: 20px 0;     
+  }
+  .conversor-result{
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+
+.make-it-slow{
+  transition: transform 0.3s ease;
   
+}
+  .km_calc-encabezado {
+    font-family: 'Montserrat';
+    font-size: 13px;
+    line-height: 25px;
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+  .km_calc-cont__field {
+    border: 1px solid rgba(255, 255, 255, .6);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    font-family: 'Montserrat';
+}
+.km_calc-cont__field__dato {
+  background-color: rgba(255, 255, 255, 1);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 65%;
+  padding: 0 15px;
+  font-family: 'Montserrat';
+}
+
+.km_calc-cont__field__dato>div>div {
+  padding: 4px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.km_calc-cont__field__dato>div>div>span {
+  align-content: normal;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 16px;
+  color: #081228;
+}
+.km_calc-cont__field__dato>div>div>input {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 99.61%;
+  letter-spacing: -.03em;
+  color: #061026;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  padding: 0;
+  max-width: 100%;
+  display: block;
+}
+
+.km_calc-cont__field__monedas {
+  font-family: 'Montserrat';
+  background-color: #060f25;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 35%;
+  position: relative;
+}
+.km_calc-cont__field__monedas>div {
+  padding: 21px 10px;
+  text-align: center;
+}
+.km_calc-cont__field__monedas>div>span {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 99.61%;
+  color: #fff;
+}
+.p-0 {
+  padding: 0 !important;
+}
+.km_calc-cont__field__dato {
+   background: #d8dcdf !important; 
+}
+element.style {
+  transform: rotate(0deg);
+}
+.km_calc-cont__field__monedas img {
+  position: absolute;
+  width: 46px;
+  height: auto;
+  left: -22px;
+  top: -25px;
+  cursor: pointer;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+
+  .conversor-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; /* Adjust as needed */
+    height: 30px; /* Adjust as needed */
+    border: none;
+    border-radius: 5px;
+    background-color: #000000; /* Bootstrap primary button color */
+    color: white;
+    text-align: center;
+    font-size: 0.875rem; /* Bootstrap small button font size */   
+    margin: 20px 0; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    }
+
+    .conversor-button:active {
+      transform: scale(0.95);
+    }
+
   .page-title {
     color: #ffffff;
     margin: 0 0 5px;

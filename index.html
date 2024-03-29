@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
-    <script src="logic.js" crossorigin="anonymous"></script>
+    
     <title>Document</title>
 </head>
 <body>
@@ -18,23 +18,42 @@
       </div>
         <div class="container">
             <div class="conversor">
-            <h2 class="conversor-title">
-                DOLAR (USD) PARA SOLES (PER)
-            </h2>
-            <input type="number" class="conversor-input" id="dolarInput" placeholder="0.00">
-            <button class="conversor-button" onclick="convertDolarToReal()">
-                CONVERTIR
-            </button>
-            <h2 class="conversor-result" id="realResult">
-                SOLES (PER) PARA DOLAR (USD)
-            </h2>
-            <input type="number" class="conversor-input" id="realInput" placeholder="0.00">
-            <button class="conversor-button" onclick="convertRealToDolar()">
-                CONVERTIR
-            </button>
-            <h2 class="conversor-result" id="dolarResult">
-                $ 0.00
-            </h2>
+
+
+                <div class="km_calc">
+                    <div class="km_calc-encabezado">
+                        <strong>Tipo de Cambio&nbsp;</strong>&nbsp;del dólar hoy en Perú<br>
+                        Compra:&nbsp;<strong id="valcompra">3.701</strong>
+                        Venta: <strong id="valventa">3.736</strong>
+                    </div>
+                <div class="km_calc-cont">
+                    <div class="p-0 km_calc-cont__field">
+                        <div class="km_calc-cont__field__dato">
+                            <div>
+                                <div>
+                    <span>Tú Envías</span>
+                        <input type="text" value="1500" name="valini" id="valini" autocomplete="off"></div></div></div>
+                        <div class="monedas km_calc-cont__field__monedas">
+                            <div id="inicio" cambio="usd">
+                        <span>Dólares</span>
+                    </div></div></div>
+                    <div class="p-0 km_calc-cont__field">
+                        <div class="km_calc-cont__field__dato"><div><div>
+                        <span>Tú Recibes</span>
+                        <input type="text" value="5555" name="valfin" id="valfin" autocomplete="off">
+                </div></div></div>
+                <div class="monedas km_calc-cont__field__monedas">
+                    <img decoding="async" src="https://cdn.kambista.com/svg/change.svg" 
+                    class="make-it-slow" id="change" alt="icon-update" 
+                    style="transform: rotate(0deg);">
+                    <div id="final" cambio="pen">
+                    <span style="opacity: 1;">Soles</span>
+                </div>
+            </div>
+        </div>
+                </div>
+            </div>       
+          
         </div>
       <a href="https://www.aluracursos.com/" target="_blank">
         <img src="" alt="" class="alura-latam-logo">
@@ -42,4 +61,5 @@
       </a>
     
 </body>
+<script src="logic.js"></script>
 </html>
